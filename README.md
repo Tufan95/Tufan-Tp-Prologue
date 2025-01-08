@@ -58,9 +58,22 @@ Liste = [marc].
   
   Exercice n°8:
 
-  
-    
+  Créez une règle pour définir les oncles et tantes :
 
+  oncle(X, Y) :- homme(X), parent(Z, Y), freresSoeurs(X, Z).
+  tante(X, Y) :- femme(X), parent(Z, Y), freresSoeurs(X, Z).
+
+  Posez les questions suivantes :
+  1.	Marc est-il l'oncle de Paul ?
+        ?- oncle(marc, paul).
+        false.
+
+  3.	Quels sont les oncles de Sophie ?
+        ?- oncle(X, sophie).
+        X = marc 
+
+  Exercice n°9:
+  
 
 
 
