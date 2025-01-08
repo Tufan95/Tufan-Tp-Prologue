@@ -73,6 +73,12 @@ Liste = [marc].
         X = marc 
 
   Exercice n°9:
+  Interrogez la base de connaissances pour trouver les cousins de Paul :
+
+  cousin(X, Y) :- parent(Z, X), freresSoeurs(Z, W), parent(W, Y).
+
+  ?- cousin(X, paul).
+  false.
   
 
 
