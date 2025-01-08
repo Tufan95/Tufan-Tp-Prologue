@@ -36,6 +36,8 @@ Posez les questions suivantes à Prolog :
     findall(X, parent(X, sophie), Liste).
 Liste = [marc].
 
+   Exercice n°5:
+   Fait sur le terminal.
    Exercice n°6:
    1.	Ajoutez une règle pour calculer la longueur d'une liste :
         longueur([], 0).
