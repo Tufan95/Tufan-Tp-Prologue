@@ -8,6 +8,6 @@ parent(pierre, paul).
 parent(marie, paul).
 parent(marc, sophie).
 
-père(X, Y) :- homme(X), parent(X, Y).
-mère(X, Y) :- femme(X), parent(X, Y).
+pÄre(X, Y) :- homme(X), parent(X, Y).
+mÄre(X, Y) :- femme(X), parent(X, Y).
 
