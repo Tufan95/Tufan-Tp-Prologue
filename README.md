@@ -20,3 +20,47 @@ Posez les questions suivantes à Prolog :
        oui
   	    grandparent(X, sophie).
   	    reponse Jacques
+
+   Exercice n°3:
+
+1.	Paul a-t-il des frères ou des sœurs ?
+
+   Exercice n°4:
+   1.	Trouvez tous les hommes dans la base de données :
+          findall( X, homme(X), Liste).
+     	cela donne:
+     	Liste = [pierre, marc, paul, jacques].
+     	
+
+3.	Recherchez tous les parents de Sophie :
+    findall(X, parent(X, sophie), Liste).
+Liste = [marc].
+
+   Exercice n°6:
+   1.	Ajoutez une règle pour calculer la longueur d'une liste :
+        longueur([], 0).
+        longueur([_ | Queue], N) :- longueur(Queue, M), N is M + 1.
+
+   Testez la règle en posant les requêtes suivantes :
+   ?- longueur([pierre, marie, paul], N).
+    N = 3.
+
+
+  Exercice n°7:
+  Ajoutez une règle pour vérifier si un élément est présent dans une liste :
+  membre(X, [X|_]).
+  membre(X, [_|T]) :- membre(X, T).
+
+  Posez la question suivante pour trouver si Marie est présente dans la liste contenant pierre, marie et paul
+
+  ?- membre(marie, [pierre, marie, paul]).
+  true
+  
+  Exercice n°8:
+
+  
+    
+
+
+
+
