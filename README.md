@@ -14,6 +14,9 @@ Exercice n°2:
 Posez les questions suivantes à Prolog :
 1.	Qui est le grand-parent de Paul ?
     il n'a pas de grand-parent
+  	pour cela on fait grandparent(X, paul).
 
 3.	Jacques est-il grand-parent de Sophie ?
-       oui 
+       oui
+  	    grandparent(X, sophie).
+  	    reponse Jacques
